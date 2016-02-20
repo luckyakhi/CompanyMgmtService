@@ -15,8 +15,8 @@ public class CompanyDAOImpl implements CompanyDAO{
 
 	@Override
 	public void create(CompanyDTO companyDTO) {
-		jdbcTemplate.update("insert into company (company_id,company_name,address,city,"
-				+ "country,email,phone_number) values (company_id_seq.nextval,?,?,?,?,?);"
+		jdbcTemplate.update("insert into company (name,address,city,"
+				+ "country,email,phone_number) values (?,?,?,?,?,?);"
 				, companyDTO.getName(),companyDTO.getAddress(),companyDTO.getCity(),companyDTO.getCountry(),
 				companyDTO.getEmail(),companyDTO.getPhoneNumber());
 		

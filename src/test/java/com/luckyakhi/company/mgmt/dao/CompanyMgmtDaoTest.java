@@ -34,7 +34,7 @@ public class CompanyMgmtDaoTest {
 		companyDTO.setCountry("India");
 		companyDTO.setEmail("akhi.iitkgp@gmail.com");
 		companyDTO.setAddress("Vinchester Powai");	
-		companyDTO.setPhoneNumber("98363151028");
+		companyDTO.setPhoneNumber("9769132490");
 		
 		
 		companyDAO.create(companyDTO);
